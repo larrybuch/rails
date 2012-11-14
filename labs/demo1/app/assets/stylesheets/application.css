@@ -1,0 +1,15 @@
+.warp {
+ color: red; 
+}
+
+.travel {
+  color:green;
+}
+
+.awesome {
+  font-family: cursive;
+  font-size: 30px;
+  border: 4px double green;
+  padding: 20px;
+  background: gray;
+}
