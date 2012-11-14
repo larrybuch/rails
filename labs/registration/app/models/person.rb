@@ -16,6 +16,7 @@
 #
 
 class Person < ActiveRecord::Base
+  validates_with PersonValidator
   validates :name, :length => { :minimum => 3 }
   validates :state, :length => { :is => 2 }
   validates :age, :numericality => { :greater_than => 17 }
