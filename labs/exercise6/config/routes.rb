@@ -1,7 +1,11 @@
-Exercise5::Application.routes.draw do
-  
-  match '/movie' => 'movies#get_movie', :via => :get
-  match '/movie' => 'movies#show_movie', :via => :post
+Exercise6::Application.routes.draw do
+
+  match '/a' => 'home#a' 
+  match '/b' => 'home#b' 
+  match '/c' => 'home#c' 
+
+  match '/home' => 'home#switch'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

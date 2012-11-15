@@ -1,0 +1,14 @@
+<%= form_tag '/output' do %>
+
+  <%= label_tag 'symbol' %>
+  <%= text_field_tag 'symbol' %>
+
+  <%= label_tag 'number' %>
+  <%= number_field_tag 'number' %>
+
+  <%= label_tag 'sleep' %>
+  <%= number_field_tag 'sleep' %>
+
+  <%= submit_tag 'Go' %>
+
+<% end %>

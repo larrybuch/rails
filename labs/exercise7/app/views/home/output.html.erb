@@ -1,0 +1,13 @@
+<h1><%= @symbol %></h1>
+
+<h1>Average  |  <%= number_to_currency(@average) %> </h1>
+
+
+<% @quotes_array.each do |quote| %>
+  <ul>
+    <li>
+      <%= number_to_currency(quote) %>
+    </li>
+  </ul>
+<% end %>
+

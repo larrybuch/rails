@@ -1,0 +1,45 @@
+<% @movies.each do |movie| %>
+  <div class='movie'>
+    <%# binding.pry %>
+    <%= image_tag movie["Poster"] %>
+    <p><%= movie["Title"] %></p>
+    <p><%= movie["Year"] %></p>
+    <p><%= movie["Rated"] %></p>
+    <p><%= movie["Released"] %></p>
+    <p><%= movie["Runtime"] %></p>
+    <p>
+      Genres
+      <ul>
+        <% movie["Genre"].split(', ').each do |genre| %>
+          <li><%= genre %></li>
+        <% end %>
+      </ul>
+    </p>
+
+    <p>
+      Directors
+      <ul>
+        <% movie["Director"].split(', ').each do |director| %>
+          <li><%= director %></li>
+        <% end %>
+      </ul> 
+    </p>
+
+    <p>
+      Actors
+      <ul>
+        <% movie["Actors"].split(', ').each do |actors| %>
+          <li><%= actors %></li>
+        <% end %>
+      </ul> 
+    </p>
+  </div>
+<% end %>
+
+
+<!-- <h3>
+  Debugging Info:
+</h3>
+<p>
+  <%#= debug @movies %>
+</p> -->
