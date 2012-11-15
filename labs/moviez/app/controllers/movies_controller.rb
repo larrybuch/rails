@@ -6,9 +6,16 @@ class MoviesController < ApplicationController
   def new
   end
 
-  def create    
+  def create
     movie_name = params[:name]
-    Movie.create(:name => movie_name)
+    poster = params[:poster]
+    Movie.create(:name => movie_name, :poster => poster)
+    redirect_to movies_path
+  end
+
+  def destroy
+    movie = Movie.find(params[:id])
+    movie.delete
     redirect_to movies_path
   end
 end

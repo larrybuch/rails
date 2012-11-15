@@ -6,6 +6,7 @@ Moviez::Application.routes.draw do
   match '/movies' => 'movies#index', :via => :get
   match '/movies' => 'movies#create', :via => :post
   match '/movies/new' => 'movies#new'
+  match '/movies/:id' => 'movies#destroy', :via => :delete, :as => 'delete_movie'
 
 
   # The priority is based upon order of creation:

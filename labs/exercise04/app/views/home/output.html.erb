@@ -1,0 +1,25 @@
+<% @stocks.each do |x| %>
+
+<div class="box">
+    <% symbol = x.upcase %>
+    <% quote = YahooFinance::get_quotes(YahooFinance::StandardQuote, symbol)[symbol].lastTrade %>
+    
+  <div class = "symbol">
+    <%= symbol %>
+  </div>
+
+  <div class = "quote"> 
+    <%= quote %>
+  </div>
+
+</div>
+
+<% end %>
+
+<div class = "clear"></div>
+
+<br />
+
+<div class = "link">
+<%= link_to 'Back to Stocks', stock_path %>
+</div>

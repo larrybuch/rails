@@ -1,0 +1,35 @@
+body {
+  background: #ccc;
+  font-family: helvetica;
+}
+
+.box {
+  background: white;
+  width: 100px;
+  height: 60px;
+  text-align: left;
+  float: left;
+  margin: 30px;
+  padding: 20px;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+
+.symbol {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.clear {
+  clear:both;
+}
+
+#container {
+  width: 960px;
+  margin: auto;
+}
+
+.link {
+  margin: 30px;
+}
