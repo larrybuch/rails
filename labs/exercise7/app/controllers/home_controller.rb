@@ -9,7 +9,6 @@ class HomeController < ApplicationController
 
     number.times do
       sleep sleep
-      @quotes_array << YahooFinance::get_quotes(YahooFinance::StandardQuote, @symbol)[@symbol].lastTrade
     end
 
     @average = @quotes_array.inject{ |sum, el| sum + el }.to_f / @quotes_array.size
