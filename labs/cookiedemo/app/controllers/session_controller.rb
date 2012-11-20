@@ -1,0 +1,20 @@
+class SessionController < ApplicationController
+  def new
+  end
+
+  def create
+    ninja = Ninja.find_by_name(params[:name])
+    if ninja && ninja.authenticate(params[:password]) #logged in (if ninja and password match, log in)
+      session[:user_id] = ninja.id
+      redirect_to ninjas_path
+    else
+      render :new
+    end
+  end
+
+  def destroy
+    session[:user_id] = nil
+    redirect_to ninjas_path
+  end
+
+end
