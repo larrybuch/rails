@@ -1,0 +1,11 @@
+<input type="button" value="Name" id="name_button"> </input>
+
+<br />
+<br />
+
+<%= form_tag '/show_name', :id => 'name_form', :method => :get, :remote => true do %>
+  <%= text_field_tag 'name' %>
+  <%= submit_tag 'Lets boogie', :id => 'boogie' %>
+<% end %>
+<div id="reveal_name">
+</div>
