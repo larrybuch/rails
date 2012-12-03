@@ -1,0 +1,8 @@
+Yo, stacks!
+<%= form_tag '/stack', :remote => true do %>
+  <%= text_field_tag 'color' %>
+  <%= submit_tag 'push' %>
+  <%= submit_tag 'pop' %>
+<% end %>
+
+<div id = "stack"></div>

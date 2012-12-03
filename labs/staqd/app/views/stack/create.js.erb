@@ -1,0 +1,6 @@
+console.log('hey!');
+
+<%= @colors.data.each do |color| %>
+  $('#stack').prepend('<div style="background-color:' + <%= color %> + '; class="box">');
+<% end %>
+
