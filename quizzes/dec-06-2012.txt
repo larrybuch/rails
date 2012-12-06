@@ -1,0 +1,11 @@
+Quiz
+Larry
+
+1.  487
+2.  A block of information is stored on a stack, inside a stack frame.
+3.  You can't have duplicates in a set.
+4.  BigO notation describes the time it takes a particular function to do something
+5.  O(n^2)
+6.  Create a root note, then create another node and link it up as the prv of the root node, then add another node and link it up as the nxt of the root node, then create another node and link it up as the prv of that node, etc. etc.
+7.  52 million
+    Well there are about 8.2 million people in New York. I'd guess the average person has a slice of pizza per week. There are 8 slices in a full pizza. So that's 52 slices of pizza/person per year. Which is 416,000,000 slices of pizza. Divide by 8 to get the number of whole pizzas to get 52 million.
