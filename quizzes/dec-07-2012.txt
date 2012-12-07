@@ -1,0 +1,14 @@
+1. Hypertext Markup Language. It's the structure of your site.
+2. SASS is a more efficient way to write CSS.
+3. Objects, Strings, Numbers, Booleans, Arrays
+4. use {}
+5. JSON is the data format that allows web servies to talk to each other.
+6. DOM ready is setting a function to be ready when the DOM is loaded using function()
+7. To create a global variable, set your varialbe outside the scope of function. To create a local one, set it inside the scope of the function.
+8. An class is a group of objects, an object is an instance of a class. So the class might be People and the object would be a person.
+9. Inheritance is the realationship between 2 classes.
+10. An array is a series of items separated by a comma. A hash is a series of items with keys and values.
+11. A hash is faster to search.
+12. Stack, List, Array, Queue
+13. There are roughly 3 million people in Chicago and I'd say maybe 1 in 100 have pianos, so 30,000.
+14. Manhole covers are round so they don't fall through the holes they cover. If they were square they could fall through the hole and kill the dudes below.
