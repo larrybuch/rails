@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: stokboard_development
+  pool: 5
+  host: localhost
+  username: larrybuch
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: stokboard_production
+  pool: 5
+  host: localhost
+  username: larrybuch
+  password:

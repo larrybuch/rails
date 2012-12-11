@@ -1,0 +1,8 @@
+<h1>Yo, Stokboard!</h1>
+
+<%= form_tag '/create', :remote => true do %>
+  <%= text_field_tag 'quote' %>
+  <%= submit_tag 'Get quotes!' %>
+<% end %>
+
+<div id="stockgraph"></div>
