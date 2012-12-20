@@ -1,0 +1,27 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: queuing_development
+  pool: 5
+  host: localhost
+  username: larrybuch
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: queuing_production
+  pool: 5
+  host: localhost
+  username: larrybuch
+  password:
+
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: queuing_production
+  pool: 5
+  host: localhost
+  username: larrybuch
+  password:
